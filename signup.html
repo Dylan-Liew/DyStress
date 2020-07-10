@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/ico" href="img/DLogo.png"/>
+  <link rel="stylesheet" type="text/css" href="css/DyStress.css">
+  <!--montserrat alternates font-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <!--menu logo-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DyStress_SignUp</title>
+  <script src='js/sha1.js'></script>
+  <script src='js/DyStress.js'></script>
+</head>
+<body class="signuppage">
+
+<!--Logo-->
+<header class="logocontainer" id="top">
+    <h1 class="logo">DyStress</h1>
+</header>
+
+<!-- Sign_Up Form-->
+<div class="signupcontainer">
+  <form id="signupform" action="JavaScript:Register()">
+      <h2 class="signuplogo">Sign Up</h2>
+      <input type="text" placeholder="Enter Username : " id="username" maxlength="20" autocomplete="off" autofocus required>
+      <input type="email" placeholder="Enter Email : " autocomplete="off" required>
+      <input type="password" placeholder="Enter Password : " id="password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <input type="password" placeholder="Enter Password Again : " autocomplete="off" id="password2" required>
+      <p id="warnmessage"></p>
+      <button type="submit" class="submit" value="Submit">Sign Up</button>
+      <a href="index.html" class="signuphref">Back</a>
+  </form>
+</div>
+<p class="secret"> Games_For_Life </p>
+</body>
+</html>

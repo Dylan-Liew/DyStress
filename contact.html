@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="js/sha1.js"></script>
+  <link rel="icon" type="image/ico" href="img/DLogo.png"/>
+  <link rel="stylesheet" type="text/css" href="css/DyStress.css">
+  <!--montserrat alternates font-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DyStress_Contact</title>
+</head>
+<body>
+<!--Logo-->
+<header class="logocontainer" id="top">
+    <h1 class="logo">DyStress</h1>
+</header>
+
+<!--Navigation Bar-->
+<nav class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="#top" class="active">Contact</a>
+  <a onclick="logincheck2()">Login</a>
+  <a href="javascript:void(0);" class="icon" onclick="myNavBar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<!-- LoginPage -->
+<div id="login" class="modal">
+  <form class="modal-content animate" action="Javascript:login()">
+    <div class="loginlogocontainer">
+      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2 class="loginlogo">DyStress</h2>
+    </div>
+    <div class="inputcontainer">
+      <input type="text" placeholder="Enter Username : " id="username" autocomplete="off" required>
+      <input type="password" placeholder="Enter Password : " id="password" autocomplete="off" required>
+      <span class="showPassword"><input type="checkbox" id="checkpass" onclick="showPassword()"><label for="checkpass" >Show Password</label></span>
+      <button type="submit" class="submit">LOGIN</button>
+      <a href="signup.html" class="signuphref">Sign Up</a>
+    </div>
+  </form>
+</div>
+
+<!-- Contact -->
+<section>
+  <img class="hero-image" src="img/backgroundcontact.png" alt="Contact">
+  <div class="contact_form">
+    <form action="mailto:dystress35@gmail.com" method="post" enctype="text/plain">
+      <h1 class="subheader contact"> Contact Me </h1>
+      <label for="fname">Your Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Your Name.."  required><br>
+      <label for="email">Your Email</label><br>
+      <input type="email" id="email" name="mail" placeholder="Your Email.." required><br>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="comment"></textarea><br>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="copyright"><p>&copy; 2019 DyStress</p></div>
+  <div class="socialmedia">
+  <a href="https://www.facebook.com" class=" fa2 fa fa-facebook" target="_blank"></a>
+  <a href="https://www.youtube.com/channel/UCuFMrJP779zb-1vOg9CFelg" class="fa2 fa fa-youtube" target="_blank"></a>
+  <a href="https://www.instagram.com" class="fa2 fa fa-instagram" target="_blank"></a>
+  </div>
+  <div class="navbot">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#top">Contact</a>
+  </div>
+</footer>
+
+<script src="js/DyStress.js"></script>
+</body>
+</html>

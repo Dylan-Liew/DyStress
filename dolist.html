@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/ico" href="img/DLogo.png"/>
+  <link rel="stylesheet" type="text/css" href="css/DyStress.css">
+  <link rel="stylesheet" type="text/css" href="css/dolist.css">
+  <!--montserrat alternates font-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <!--menu logo-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <title>DyStress_DoList</title>
+</head>
+<body>
+<!--Logo-->
+<header class="logocontainer" id="top">
+    <h1 class="logo">DyStress<br>Functions</h1>
+</header>
+<!--Navigation Bar-->
+<nav class="topnav" id="myTopnav">
+  <a href="#top" class="active">DoList</a>
+  <a href="doentertain.html">DoEntertain</a>
+  <a href="dgenerator.html">DGenerator</a>
+  <a href="index.html">Back2Home</a>
+  <a href="javascript:void(0);" class="icon" onclick="myNavBar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<!-- Section -->
+<h1 class="logo functionlogo"> DyStress DoList </h1>
+<div class="StoryTime functionstorytime">
+<h2> Feel Free To List Down What are your task and quest to target your task for the day,month or even year</h2>
+<h2> When you list down what you need to do , you already completed half of your task </h2>
+</div>
+<hr>
+<form id="todos-form">
+  <h2 id="todos-title">Dolist (<span id="todos-count"></span>)</h2>
+  <ul id="todos-ul"></ul>
+  <div id="add-todo">
+    <input id="add-todo-input" type="text" placeholder="Add Quests..." required autocomplete="off">
+    <button id="add-todo-btn"><span class="right-arrow"></span></button>
+  </div>
+</form>
+
+<!-- Footer -->
+<footer>
+  <div class="copyright"><h3>&copy; 2019 DyStress</h3></div>
+  <div class="socialmedia">
+  <a href="https://www.facebook.com" class=" fa2 fa fa-facebook" target="_blank"></a>
+  <a href="https://www.youtube.com/channel/UCuFMrJP779zb-1vOg9CFelg" class="fa2 fa fa-youtube" target="_blank"></a>
+  <a href="https://www.instagram.com" class="fa2 fa fa-instagram" target="_blank"></a>
+  </div>
+  <div class="navbot">
+    <a href="#top">DoList</a>
+    <a href="doentertain.html">DoEntertain</a>
+    <a href="dgenerator.html">DGenerator</a>
+  </div>
+</footer>
+
+<script src="js/dolist.js"></script>
+<script src="js/DyStress.js"></script>
+<!-- Log in Validation -->
+<script>
+  logincheck()
+</script>
+</body>
+</html>

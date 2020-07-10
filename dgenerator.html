@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/ico" href="img/DLogo.png"/>
+  <link rel="stylesheet" type="text/css" href="css/DyStress.css">
+  <link rel="stylesheet" type="text/css" href="css/dgenerator.css">
+  <script src="js/dgenerator.js"></script>
+  <!--montserrat alternates font-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <!--menu logo-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DyStress_DGenerator</title>
+</head>
+<body>
+<!--Logo-->
+<header class="logocontainer" id="top">
+    <h1 class="logo">DyStress<br>Functions</h1>
+</header>
+
+<!--Navigation Bar-->
+<nav class="topnav" id="myTopnav">
+  <a href="dolist.html">DoList</a>
+  <a href="doentertain.html">DoEntertain</a>
+  <a href="#top" class="active">DGenerator</a>
+  <a href="index.html">Back2Home</a>
+  <a href="javascript:void(0);" class="icon" onclick="myNavBar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<!-- section -->
+  <h1 class="logo functionlogo">DyStress DGenerator</h1>
+  <div class="StoryTime functionstorytime">
+    <h2> Having Difficulty Making Decision ? Let DyStress DGenerator help you !!! </h2>
+    <h2> Warning : Dylan Not Responsible for the output of the decision. </h2>
+  </div>
+  <hr>
+  <div class="decisioncontainer">
+      <h2 class="logo functionheader">DGenerator</h2>
+      <form id = "form">
+      <input type = "text" class = "option" id = "default" placeholder = "List an option">
+      <br>
+      <input type = "text" class = "option" id = "default" placeholder = "List an option">
+      </form>
+
+    <input type = "button" id = "add-button" value = "+ Add Option +" >
+    <br>
+    <a href="#result"><input type = "submit" id="choose-button" value = "= GENERATE =" ></a>
+    <br>
+    <input type = "button" id = "reset-button" value = "* RESET *" >
+    <br>
+    <h2 class="DGenerator">DGenerator Decision  :</h2>
+    <span class="DGenerator" id="resultcontainer"></span>
+  </div>
+
+<!-- Footer -->
+<footer>
+  <div class="copyright"><h3>&copy; 2019 DyStress</h3></div>
+  <div class="socialmedia">
+  <a href="https://www.facebook.com" class=" fa2 fa fa-facebook" target="_blank"></a>
+  <a href="https://www.youtube.com/channel/UCuFMrJP779zb-1vOg9CFelg" class="fa2 fa fa-youtube" target="_blank"></a>
+  <a href="https://www.instagram.com" class="fa2 fa fa-instagram" target="_blank"></a>
+  </div>
+  <div class="navbot">
+    <a href="dolist.html">DoList</a>
+    <a href="doentertain.html">DoEntertain</a>
+    <a href="#top">DGenerator</a>
+  </div>
+</footer>
+
+<script src="js/DyStress.js"></script>
+<!-- Log in Validation -->
+<script>
+  logincheck()
+</script>
+<script>
+  document.getElementById("choose-button").addEventListener("click", chooseRandom);
+  document.getElementById("add-button").addEventListener("click", addTextBox);
+  document.getElementById("reset-button").addEventListener("click", reset);
+  document.getElementById("reset-button").addEventListener("click", resetResults);
+</script>
+</body>
+</html>

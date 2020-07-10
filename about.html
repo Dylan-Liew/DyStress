@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="js/sha1.js"></script>
+  <link rel="icon" type="image/ico" href="img/DLogo.png"/>
+  <link rel="stylesheet" type="text/css" href="css/DyStress.css">
+  <!--montserrat alternates font-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <!--menu logo-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DyStress_About</title>
+</head>
+<body>
+<!--Logo-->
+<header class="logocontainer" id="top">
+    <h1 class="logo">DyStress</h1>
+</header>
+
+<!--Navigation Bar-->
+<nav class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="#top" class="active">About</a>
+  <a href="contact.html">Contact</a>
+  <a onclick="logincheck2()">Login</a>
+  <a href="javascript:void(0);" class="icon" onclick="myNavBar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<!-- LoginPage -->
+<div id="login" class="modal">
+  <form class="modal-content animate" action="Javascript:login()">
+    <div class="loginlogocontainer">
+      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2 class="loginlogo">DyStress</h2>
+    </div>
+    <div class="inputcontainer">
+      <input type="text" placeholder="Enter Username : " id="username" autocomplete="off" required>
+      <input type="password" placeholder="Enter Password : " id="password" autocomplete="off" required>
+      <span class="showPassword"><input type="checkbox" id="checkpass" onclick="showPassword()"><label for="checkpass" >Show Password</label></span>
+      <button type="submit" class="submit">LOGIN</button>
+      <a href="signup.html" class="signuphref">Sign Up</a>
+    </div>
+  </form>
+</div>
+
+<!--About-->
+<section>
+  <img class="hero-image" src="img/backgroundabout.png" alt="About">
+  <div class="StoryTime">
+    <h1 class="aboutheader"> About </h1>
+    <p>When was the last time you said you were <span class="stress">stress</span>ed? Last week? Yesterday? A month or so ago? How about all of the time?<span class="stress"> Stress</span> is like long-term cancer, it kills you slowly. Hence, the purpose of DyStress is to help u to de-<span class="stress">stress.</span></p>
+    <h2 class="subheader"> DGenerator </h2>
+    <p> DGenerator is a function using Random Number Generator to help you make Decision when you have difficulty making decision.</p>
+    <p> Warning : &nbsp I am not responsible to the outcome of the decision - Dylan </p>
+    <h2 class="subheader"> DoEntertain </h2>
+    <p> DoEntertain are showing you some of the examples to "DyStress" through Entertainment.</p>
+    <h2 class="subheader">DoList</h2>
+    <p> DoList is a function where you are able to list down your task. When you list down what you need to do , you already completed half. </p>
+    <br>
+    <a class="stress_learnmore" href="https://medlineplus.gov/ency/article/003211.htm" target="_blank">Learn More About Stress</a>
+    <br><br>
+    <p> A Youtube Video at the bottom of the page shows how stress affect your brain.</p>
+    <h2> Please <a class="logintext" onclick="logincheck2()">Login</a> to use the Functions</h2>
+  </div>
+  <hr>
+  <div class="vid_container">
+    <iframe class="stress_vid" src="https://www.youtube-nocookie.com/embed/WuyPuH9ojCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Video : How Stress affect your brain</h2>
+  </div>
+  <hr>
+</section>
+<!-- footer -->
+<footer>
+  <div class="copyright"><p>&copy; 2019 DyStress</p></div>
+  <div class="socialmedia">
+  <a href="https://www.facebook.com" class=" fa2 fa fa-facebook" target="_blank"></a>
+  <a href="https://www.youtube.com/channel/UCuFMrJP779zb-1vOg9CFelg" class="fa2 fa fa-youtube" target="_blank"></a>
+  <a href="https://www.instagram.com" class="fa2 fa fa-instagram" target="_blank"></a>
+  </div>
+  <div class="navbot">
+    <a href="index.html">Home</a>
+    <a href="#top">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="js/DyStress.js"></script>
+</body>
+</html>
