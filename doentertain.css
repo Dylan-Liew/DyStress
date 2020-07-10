@@ -1,0 +1,88 @@
+/* Table Of Content */
+.tableofcontent{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1vw double DarkTurquoise	;
+  background-color:white;
+  text-align: center;
+}
+
+.tableofcontent td, .tableofcontent th{
+  border:2px solid DarkTurquoise;
+  padding: 10px 0;
+}
+
+.tableofcontent tr:nth-child(even){
+  background-color: #21618C ;
+  color: white;
+}
+
+.tableofcontent tr{
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.tableofcontent tr td a{
+  text-decoration: none;
+  color: black;
+}
+
+.tableofcontent tr td a:hover{
+  text-decoration: underline;
+}
+
+.tableofcontent tr:nth-child(even) td a{
+  color: white;
+}
+
+.tableofcontent tr th{
+  background-color: navy;
+  color:white;
+}
+
+/* Flex Container */
+.entertainment_container{
+  display: flex;
+  align-items: center;
+}
+
+.entertainment_container > div{
+  width: 100%;
+}
+
+.img{
+  width: 85%;
+  box-shadow: 0 0 5px 3px black;
+  margin:5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .entertainment_container{
+    flex-direction: column;
+  }
+  .entertainment_container div p{
+    width: 100%;
+    margin:0px;
+  }
+  audio{
+    width: 90%;
+  }
+  .StoryTime{
+    margin: 15px 2px;
+  }
+}
+
+/* Remove Hyperlink Text decoration */
+.StoryTime div a{
+  text-decoration: none;
+  color:blue;
+  font-weight: bold;
+}
+
+.StoryTime div a:hover{
+  text-decoration: underline;
+  color:mediumblue;
+  font-weight: bolder;
+}
