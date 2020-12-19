@@ -27,8 +27,6 @@ DyStress consist of multiple feature to reduce the stress of the user.
 * Default Credentials : 
   * Username : Dystress3
   * Password : Dystress3
-### API Testing Tool
-* Postman 
 
 ### Credits:
 * [Dylan](https://github.com/Dylan-Liew)
