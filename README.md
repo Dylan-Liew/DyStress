@@ -24,7 +24,8 @@ DyStress consist of multiple feature to reduce the stress of the user.
 
 ### Guide
 * Open `Index.html` 
-
+* Credentials : Username - Dystress3
+                Password - Dystress3
 ### API Testing Tool
 * Postman 
 
